@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
@@ -7,6 +7,7 @@ import WhyItMatters from './components/WhyItMatters';
 import GetInvolved from './components/GetInvolved';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Cta from './components/Cta';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Cta />
         <AboutUs />
         <WhatWeDo />
         <WhyItMatters />

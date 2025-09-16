@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import logo1 from '../assets/logo1.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,17 +13,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm fixed w-full top-0 z-50">
+    <header className="bg-bg-neutral shadow-sm w-full top-0 z-50 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex md:flex-col justify-between items-center ">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-primary-blue p-2 rounded-lg">
-              <Heart className="h-6 w-6 text-white" fill="currentColor" />
-            </div>
-            <span className="font-heading font-bold text-xl text-primary-blue">
-              Children's Futures Foundation
-            </span>
+          <div className="cursor-pointer" onClick={() => scrollToSection('home')}>
+            <img src={logo1} alt="Logo" />
           </div>
 
           {/* Desktop Navigation */}
@@ -66,14 +62,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button
-              onClick={() => scrollToSection('get-involved')}
-              className="bg-primary-orange text-white px-6 py-2 rounded-lg font-heading font-bold text-sm hover:bg-opacity-90 transition-all transform hover:scale-105"
-            >
-              DONATE NOW
-            </button>
-          </div>
+      
 
           {/* Mobile menu button */}
           <div className="md:hidden">

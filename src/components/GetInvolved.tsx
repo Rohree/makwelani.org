@@ -1,5 +1,6 @@
-import React from 'react';
+
 import { Heart, Handshake, Users, FileText, ArrowRight } from 'lucide-react';
+import Image from '../assets/image-1.png';
 
 const GetInvolved = () => {
   const ways = [
@@ -44,7 +45,7 @@ const GetInvolved = () => {
   };
 
   return (
-    <section id="get-involved" className="py-16 lg:py-24 bg-white">
+    <section id="get-involved" className="py-16 lg:py-24 bg-bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-3xl lg:text-5xl text-primary-blue mb-6">
@@ -82,34 +83,30 @@ const GetInvolved = () => {
         </div>
 
         {/* Donation Levels */}
-        <div className="bg-bg-neutral rounded-2xl p-8 lg:p-12">
+        <div   className="bg-cover bg-center rounded-2xl p-8 lg:p-12 b"
+               style={{ backgroundImage: `url(${Image})` }}
+          >
           <div className="text-center mb-12">
-            <h3 className="font-heading font-bold text-2xl text-primary-blue mb-4">
-              Donation Impact
+            <h3 className="font-heading font-bold text-2xl text-primary-orange shadow-lg bg-bg-neutral py-2 rounded-md bg-opacity-5 mb-4 uppercase">
+              This how your Donations Makes a Difference
             </h3>
-            <p className="text-gray-600">
-              See how your contribution makes a difference
-            </p>
+            
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <div className="font-heading font-bold text-3xl text-primary-orange mb-2">$50</div>
-              <div className="font-heading font-semibold text-lg text-primary-blue mb-3">Basic Training</div>
-              <p className="text-gray-600 text-sm">Provides essential safety training for one caregiver</p>
+              <div className="font-heading font-bold text-3xl text-primary-orange mb-2">Legal Compliance</div>
+              <p className="text-gray-600 text-sm">We guide orphanages through complex registration processes, licensing requirements, and regulatory audits to ensure full legal compliance.</p>
             </div>
             
             <div className="bg-white rounded-xl p-6 text-center shadow-lg border-2 border-accent-green">
-              <div className="bg-accent-green text-white text-xs font-bold px-3 py-1 rounded-full mb-3">POPULAR</div>
-              <div className="font-heading font-bold text-3xl text-accent-green mb-2">$250</div>
-              <div className="font-heading font-semibold text-lg text-primary-blue mb-3">Compliance Package</div>
-              <p className="text-gray-600 text-sm">Covers full legal registration support for one orphanage</p>
+              <div className="font-heading font-bold text-3xl text-accent-green mb-2">Community Building</div>
+              <p className="text-gray-600 text-sm">We collaborate with local businesses to provide essential care packages that support the well-being of children in orphanages, while fostering shared responsibility and community involvement</p>
             </div>
             
             <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-              <div className="font-heading font-bold text-3xl text-primary-blue mb-2">$500</div>
-              <div className="font-heading font-semibold text-lg text-primary-blue mb-3">Full Support</div>
-              <p className="text-gray-600 text-sm">Complete compliance and training program for one facility</p>
+              <div className="font-heading font-bold text-3xl text-primary-blue mb-2">Brighter Future</div>
+              <p className="text-gray-600 text-sm">By meeting their immediate needs and nurturing their growth, we help open doors to education, health, and a sense of belonging—empowering each child to dream bigger and thrive</p>
             </div>
           </div>
         </div>

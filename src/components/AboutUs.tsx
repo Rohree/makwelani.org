@@ -1,5 +1,7 @@
-import React from 'react';
-import { Target, Users, Award } from 'lucide-react';
+
+import { Target, Users } from 'lucide-react';
+import image from '../assets/image-2.png';
+import image2 from '../assets/image-3.png';
 
 const AboutUs = () => {
   return (
@@ -7,7 +9,7 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-3xl lg:text-5xl text-primary-blue mb-6">
-            About Children's Futures Foundation
+            Makwelani Childrens Foundation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We are a dedicated non-profit organization committed to transforming the lives of vulnerable children by empowering the orphanages that care for them.
@@ -41,52 +43,29 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-accent-green p-3 rounded-lg flex-shrink-0">
-                  <Award className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-bold text-xl text-primary-blue mb-2">Our Impact</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Since our founding, we have helped over 25 orphanages achieve full legal compliance, directly improving the lives of more than 500 children across underserved communities.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Image */}
-          <div className="relative">
-            <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="https://images.pexels.com/photos/8363026/pexels-photo-8363026.jpeg"
-                alt="Caregivers and children in a supportive environment"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-blue/20 to-transparent rounded-2xl"></div>
-          </div>
-        </div>
+            <div className="relative w-full max-w-xs sm:max-w-md mx-auto overflow-visible">
+              {/* Bottom photo */}
+              <div className="absolute top-4 left-12 w-full  rounded-2xl overflow-hidden shadow-xl rotate-[-6deg] z-20">
+                <img
+                  src={image2}
+                  alt="Second photo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="font-heading font-bold text-4xl text-primary-orange mb-2">500+</div>
-            <div className="text-gray-600">Children Protected</div>
-          </div>
-          <div className="text-center">
-            <div className="font-heading font-bold text-4xl text-primary-blue mb-2">25+</div>
-            <div className="text-gray-600">Orphanages Supported</div>
-          </div>
-          <div className="text-center">
-            <div className="font-heading font-bold text-4xl text-accent-green mb-2">100%</div>
-            <div className="text-gray-600">Compliance Rate</div>
-          </div>
-          <div className="text-center">
-            <div className="font-heading font-bold text-4xl text-primary-orange mb-2">15+</div>
-            <div className="text-gray-600">Years Experience</div>
-          </div>
+              {/* Top photo */}
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl rotate-[3deg] z-10">
+                <img
+                  src={image}
+                  alt="First photo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
         </div>
       </div>
     </section>

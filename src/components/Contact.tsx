@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 const Contact = () => {
@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-lg text-primary-blue mb-1">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+27 (11) 123-4567</p>
                 </div>
               </div>
 
@@ -79,25 +79,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-lg text-primary-blue mb-1">Email</h4>
-                  <p className="text-gray-600">info@childrensfutures.org</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg">
-              <h4 className="font-heading font-bold text-lg text-primary-blue mb-3">Office Hours</h4>
-              <div className="space-y-2 text-gray-600">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                  <p className="text-gray-600">info@makwelani.org</p>
                 </div>
               </div>
             </div>

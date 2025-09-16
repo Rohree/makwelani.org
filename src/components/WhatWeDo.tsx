@@ -1,5 +1,5 @@
-import React from 'react';
-import { FileCheck, Users, Megaphone, CheckCircle } from 'lucide-react';
+
+import { FileCheck, Store, Megaphone, CheckCircle } from 'lucide-react';
 
 const WhatWeDo = () => {
   const services = [
@@ -10,21 +10,21 @@ const WhatWeDo = () => {
       features: ["Registration assistance", "Licensing support", "Compliance audits", "Documentation review"]
     },
     {
-      icon: Users,
-      title: "Training & Capacity Building",
-      description: "Comprehensive training programs for caregivers and staff to build skills, establish accountability systems, and improve child care standards.",
-      features: ["Caregiver workshops", "Staff development", "Accountability tools", "Best practices training"]
-    },
-    {
       icon: Megaphone,
       title: "Advocacy & Awareness",
       description: "We promote best practices in child welfare, advocate for children's rights, and work to build community trust in child care institutions.",
       features: ["Community outreach", "Best practices promotion", "Child rights advocacy", "Trust building initiatives"]
+    },
+    {
+      icon: Store,
+      title: "Community Partnerships",
+      description: "We collaborate with local businesses to provide essential care packages that support the well-being of children in orphanages, while fostering shared responsibility and community involvement.",
+      features: ["Local suppliers", "Nutritious food and hygiene items", "Sustainable support systems", "Strengthening community ties"]
     }
   ];
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-white">
+    <section id="services" className="py-16 lg:py-24 bg-bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-3xl lg:text-5xl text-primary-blue mb-6">
@@ -41,7 +41,7 @@ const WhatWeDo = () => {
             return (
               <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow p-8 border border-gray-100">
                 <div className="mb-6">
-                  <div className="bg-primary-blue p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-4">
+                  <div className="bg-primary-orange p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-4">
                     <IconComponent className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-heading font-bold text-xl text-primary-blue mb-3">

@@ -1,5 +1,8 @@
-import React from 'react';
+
 import { Shield, Heart, TrendingUp, Users } from 'lucide-react';
+import image1 from '../assets/image-1.png';
+import image2 from '../assets/image-2.png';
+import image3 from '../assets/image-3.png';
 
 const WhyItMatters = () => {
   const benefits = [
@@ -36,8 +39,25 @@ const WhyItMatters = () => {
             Legal compliance isn't just about paperwork—it's about creating safe, sustainable environments where children can thrive and reach their full potential.
           </p>
         </div>
+       <div className="relative w-full max-w-md mx-auto h-72 mb-60 ">
+          <img
+            src={image1}
+            alt=""
+            className="absolute w-80 md:top-0 md:right-48 md:w-full object-cover rounded-xl shadow-lg rotate-[-6deg]"
+          />
+          <img
+            src={image2}
+            alt=""
+            className="absolute top-52 md:top-0 md:left-64 left-40 w-60 md:w-full object-cover rounded-xl shadow-lg rotate-[4deg]"
+          />
+          <img
+            src={image3}
+            alt=""
+            className="absolute top-80 left-20 md:top-52 md:left-36 md:w-full w-64 object-cover rounded-xl shadow-lg rotate-[-3deg]"
+          />
+        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (

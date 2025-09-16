@@ -1,5 +1,6 @@
-import React from 'react';
-import { Heart, Facebook, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
+
+import {Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import logo from '../assets/logo-icon.png';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,12 +16,11 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="bg-white p-2 rounded-lg">
-                <Heart className="h-6 w-6 text-primary-blue" fill="currentColor" />
-              </div>
-              <span className="font-heading font-bold text-xl">
-                Children's Futures Foundation
-              </span>
+              <img 
+                  src={logo} 
+                  alt="Makwelani Logo"
+                  className="w-20"
+               />
             </div>
             <p className="text-blue-100 leading-relaxed mb-6">
               Building stronger orphanages and protecting brighter futures for vulnerable children through comprehensive legal compliance support, training, and advocacy.
@@ -95,36 +95,23 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <Mail className="h-4 w-4 text-blue-300 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-blue-100">info@childrensfutures.org</p>
+                  <p className="text-blue-100">info@makwelani.org</p>
                 </div>
               </div>
-              <div className="text-blue-100">
-                <p>123 Hope Street</p>
-                <p>Compassion City, CC 12345</p>
-                <p>+1 (555) 123-4567</p>
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 text-blue-300 mt-1 inline-block flex-shrink-0" />
+                <div className="text-blue-100">
+                  <p>123 Hope Street</p>
+                  <p>Compassion City, CC 12345</p>
+                  <p>+27 (11) 123-4567</p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="border-t border-blue-400 pt-12 mb-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="font-heading font-bold text-3xl text-primary-orange mb-2">500+</div>
-              <div className="text-blue-100">Children Protected</div>
-            </div>
-            <div>
-              <div className="font-heading font-bold text-3xl text-accent-green mb-2">25+</div>
-              <div className="text-blue-100">Orphanages Supported</div>
-            </div>
-            <div>
-              <div className="font-heading font-bold text-3xl text-white mb-2">100%</div>
-              <div className="text-blue-100">Compliance Rate</div>
-            </div>
-            <div>
-              <div className="font-heading font-bold text-3xl text-primary-orange mb-2">15+</div>
-              <div className="text-blue-100">Years Experience</div>
+              <div className="flex items-start space-x-2">
+                <Phone className="h-4 w-4 text-blue-300 mt-1 inline-block flex-shrink-0" />
+                <div className="text-blue-100">
+                  <p>+27 (11) 123-4567</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +119,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-blue-400 pt-8 flex flex-col lg:flex-row justify-between items-center">
           <p className="text-blue-100 mb-4 lg:mb-0">
-            © 2024 Children's Futures Foundation. All rights reserved.
+            © 2024 Makwelani Children Fondation. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-blue-100 hover:text-white transition-colors">
